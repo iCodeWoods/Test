@@ -8,10 +8,38 @@
 
 #import "ViewController.h"
 
+@interface SubViewController : ViewController
+
+@end
+
+@implementation SubViewController
+
+@end
+
+@interface ViewController ()
+
+@property (nonatomic, strong) SubViewController *subVC;
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"ViewController viewDidLoad...");
+    
+    [self addChildViewController:self.subVC];
+    [self.view addSubview:self.subVC.view];
+    [self.subVC didMoveToParentViewController:self];
+}
+
+- (SubViewController *)subVC {
+    if (!_subVC) {
+        _subVC = [[SubViewController alloc] init];
+    }
+    return _subVC;
 }
 
 @end
+
