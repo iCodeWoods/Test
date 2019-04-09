@@ -6,40 +6,46 @@
 //  Copyright © 2019 iCodeWoods. All rights reserved.
 //
 
+// ViewController.m
+
 #import "ViewController.h"
 
 @interface SubViewController : ViewController
+
+- (void)test;
 
 @end
 
 @implementation SubViewController
 
-@end
++ (void)initialize {
+    NSLog(@"SubViewController initialize...");
+}
 
-@interface ViewController ()
-
-@property (nonatomic, strong) SubViewController *subVC;
+- (void)test {
+    NSLog(@"SubViewController test...");
+}
 
 @end
 
 @implementation ViewController
 
++ (void)initialize {
+    NSLog(@"ViewController initialize... self = %@", self);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"ViewController viewDidLoad...");
+    SubViewController *subVC = [[SubViewController alloc] init];
+    [subVC test];
     
-    [self addChildViewController:self.subVC];
-    [self.view addSubview:self.subVC.view];
-    [self.subVC didMoveToParentViewController:self];
+    [self addObserver:self forKeyPath:@"view" options:NSKeyValueObservingOptionNew context:nil];
 }
 
-- (SubViewController *)subVC {
-    if (!_subVC) {
-        _subVC = [[SubViewController alloc] init];
-    }
-    return _subVC;
+- (void)dealloc {
+    NSLog(@"ViewController dealloc... self = %@", self);
+    [self removeObserver:self forKeyPath:@"view"];
 }
 
 @end
-
