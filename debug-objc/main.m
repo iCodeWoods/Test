@@ -17,6 +17,12 @@
 
 @end
 
+@interface LazyObject : NSObject
+@end
+
+@implementation LazyObject
+@end
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
