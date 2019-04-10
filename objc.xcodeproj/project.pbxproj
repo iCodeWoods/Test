@@ -21,6 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2FE1E1CE225DD77B00C7AD11 /* NonLazyObjectA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1CD225DD77B00C7AD11 /* NonLazyObjectA.m */; };
+		2FE1E1D1225DD78600C7AD11 /* NonLazyObjectB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1D0225DD78600C7AD11 /* NonLazyObjectB.m */; };
+		2FE1E1D4225DD7A600C7AD11 /* NonLazyObjectA+A1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1D3225DD7A600C7AD11 /* NonLazyObjectA+A1.m */; };
+		2FE1E1D7225DD7AF00C7AD11 /* NonLazyObjectA+A2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1D6225DD7AF00C7AD11 /* NonLazyObjectA+A2.m */; };
+		2FE1E1DA225DD7BA00C7AD11 /* NonLazyObjectB+B1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1D9225DD7BA00C7AD11 /* NonLazyObjectB+B1.m */; };
+		2FE1E1DD225DD7C200C7AD11 /* NonLazyObjectB+B2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E1DC225DD7C200C7AD11 /* NonLazyObjectB+B2.m */; };
 		301498BE21B658D100F165E9 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3014987A21B658D100F165E9 /* CrashReporterClient.h */; };
 		301498BF21B658D100F165E9 /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3014987B21B658D100F165E9 /* Block_private.h */; };
 		301498C021B658D100F165E9 /* _simple.h in Headers */ = {isa = PBXBuildFile; fileRef = 3014987C21B658D100F165E9 /* _simple.h */; };
@@ -205,6 +211,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FE1E1CC225DD77B00C7AD11 /* NonLazyObjectA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonLazyObjectA.h; sourceTree = "<group>"; };
+		2FE1E1CD225DD77B00C7AD11 /* NonLazyObjectA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NonLazyObjectA.m; sourceTree = "<group>"; };
+		2FE1E1CF225DD78600C7AD11 /* NonLazyObjectB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonLazyObjectB.h; sourceTree = "<group>"; };
+		2FE1E1D0225DD78600C7AD11 /* NonLazyObjectB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NonLazyObjectB.m; sourceTree = "<group>"; };
+		2FE1E1D2225DD7A600C7AD11 /* NonLazyObjectA+A1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NonLazyObjectA+A1.h"; sourceTree = "<group>"; };
+		2FE1E1D3225DD7A600C7AD11 /* NonLazyObjectA+A1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NonLazyObjectA+A1.m"; sourceTree = "<group>"; };
+		2FE1E1D5225DD7AF00C7AD11 /* NonLazyObjectA+A2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NonLazyObjectA+A2.h"; sourceTree = "<group>"; };
+		2FE1E1D6225DD7AF00C7AD11 /* NonLazyObjectA+A2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NonLazyObjectA+A2.m"; sourceTree = "<group>"; };
+		2FE1E1D8225DD7BA00C7AD11 /* NonLazyObjectB+B1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NonLazyObjectB+B1.h"; sourceTree = "<group>"; };
+		2FE1E1D9225DD7BA00C7AD11 /* NonLazyObjectB+B1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NonLazyObjectB+B1.m"; sourceTree = "<group>"; };
+		2FE1E1DB225DD7C200C7AD11 /* NonLazyObjectB+B2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NonLazyObjectB+B2.h"; sourceTree = "<group>"; };
+		2FE1E1DC225DD7C200C7AD11 /* NonLazyObjectB+B2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NonLazyObjectB+B2.m"; sourceTree = "<group>"; };
 		3014987A21B658D100F165E9 /* CrashReporterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
 		3014987B21B658D100F165E9 /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
 		3014987C21B658D100F165E9 /* _simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
@@ -654,6 +672,18 @@
 			isa = PBXGroup;
 			children = (
 				30466D8621B665A500DA7B9D /* main.m */,
+				2FE1E1CC225DD77B00C7AD11 /* NonLazyObjectA.h */,
+				2FE1E1CD225DD77B00C7AD11 /* NonLazyObjectA.m */,
+				2FE1E1D2225DD7A600C7AD11 /* NonLazyObjectA+A1.h */,
+				2FE1E1D3225DD7A600C7AD11 /* NonLazyObjectA+A1.m */,
+				2FE1E1D5225DD7AF00C7AD11 /* NonLazyObjectA+A2.h */,
+				2FE1E1D6225DD7AF00C7AD11 /* NonLazyObjectA+A2.m */,
+				2FE1E1CF225DD78600C7AD11 /* NonLazyObjectB.h */,
+				2FE1E1D0225DD78600C7AD11 /* NonLazyObjectB.m */,
+				2FE1E1D8225DD7BA00C7AD11 /* NonLazyObjectB+B1.h */,
+				2FE1E1D9225DD7BA00C7AD11 /* NonLazyObjectB+B1.m */,
+				2FE1E1DB225DD7C200C7AD11 /* NonLazyObjectB+B2.h */,
+				2FE1E1DC225DD7C200C7AD11 /* NonLazyObjectB+B2.m */,
 			);
 			path = "debug-objc";
 			sourceTree = "<group>";
@@ -1011,7 +1041,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE1E1DD225DD7C200C7AD11 /* NonLazyObjectB+B2.m in Sources */,
+				2FE1E1D1225DD78600C7AD11 /* NonLazyObjectB.m in Sources */,
+				2FE1E1D4225DD7A600C7AD11 /* NonLazyObjectA+A1.m in Sources */,
 				30466D8721B665A500DA7B9D /* main.m in Sources */,
+				2FE1E1CE225DD77B00C7AD11 /* NonLazyObjectA.m in Sources */,
+				2FE1E1DA225DD7BA00C7AD11 /* NonLazyObjectB+B1.m in Sources */,
+				2FE1E1D7225DD7AF00C7AD11 /* NonLazyObjectA+A2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
