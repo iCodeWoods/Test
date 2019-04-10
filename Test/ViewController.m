@@ -19,33 +19,28 @@
 @implementation SubViewController
 
 + (void)initialize {
-    NSLog(@"SubViewController initialize...");
+    NSLog(@"SubViewController initialize... self = %@", self);
+}
+
+- (void)dealloc {
+    NSLog(@"SubViewController dealloc... self = %@", self);
+    [self removeObserver:self forKeyPath:@"view"];
 }
 
 - (void)test {
     NSLog(@"SubViewController test...");
+    [self addObserver:self forKeyPath:@"view" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 @end
 
 @implementation ViewController
 
-+ (void)initialize {
-    NSLog(@"ViewController initialize... self = %@", self);
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     SubViewController *subVC = [[SubViewController alloc] init];
-    [subVC test];
-    
-    [self addObserver:self forKeyPath:@"view" options:NSKeyValueObservingOptionNew context:nil];
-}
-
-- (void)dealloc {
-    NSLog(@"ViewController dealloc... self = %@", self);
-    [self removeObserver:self forKeyPath:@"view"];
+    [subVC test];    
 }
 
 @end
