@@ -20,7 +20,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
+        BOOL a = 8960;
+        if (a) {
+            NSLog(@"YES");
+        } else {
+            NSLog(@"NO");
+        }
         NSLog(@"Hello, World!");
     }
     return 0;
