@@ -15,4 +15,9 @@
     NSLog(@"NonLazyObjectB load... a = %@", a);
 }
 
++ (void)initialize {
+    NonLazyObjectA *a = [[NonLazyObjectA alloc] init];
+    NSLog(@"NonLazyObjectB initialize... a = %@", a);
+}
+
 @end

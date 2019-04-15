@@ -13,4 +13,8 @@
     NSLog(@"NonLazyObjectA+A2 load...");
 }
 
++ (void)initialize {
+    NSLog(@"NonLazyObjectA+A2 initialize...");
+}
+
 @end
