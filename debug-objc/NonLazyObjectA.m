@@ -14,7 +14,7 @@
 }
 
 + (void)initialize {
-    NSLog(@"NonLazyObjectB initialize...");
+    NSLog(@"NonLazyObjectA initialize...");
 }
 
 @end
