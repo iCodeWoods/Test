@@ -10,7 +10,7 @@
 @implementation NonLazyObjectA
 
 + (void)load {
-    NSLog(@"NonLazyObjectA load...master");
+    NSLog(@"NonLazyObjectA load...");
 }
 
 + (void)initialize {
